@@ -1,6 +1,6 @@
 import random
 
-# Define team names and their points
+# Defined team names and their points
 teams = {
     "ANC": 67, "AUG": 65, "FAR": 63, "JAC": 61, "LAR": 60, "PRO": 56, "SFS": 55,
     "LRO": 53, "OAK": 53, "SPR": 51, "DOV": 50, "SAS": 50, "LEX": 48, "TOL": 48,
@@ -8,7 +8,7 @@ teams = {
     "MOB": 40, "ALB": 37, "MAN": 35, "WIC": 35, "TUC": 33, "SJU": 26, "TAC": 25
 }
 
-# Simulate a match
+# function to simulate a match
 def simulate_match(home, away):
     home_score = random.gauss(home, 3)
     away_score = random.gauss(away, 3)
@@ -25,7 +25,7 @@ def calculate_probability(team_a, team_b):
     probability_a = teams[team_a] / total_points
     return probability_a
 
-# Define the matchups for the knockout stage (semi-finals and finals)
+# Defined the matchups for the knockout stage (semi-finals and finals)
 knockout_stage = [
     ("Semifinals_A", "DOV", "OAK"),
     ("Semifinals_B", "FOR", "AUG"),
@@ -35,7 +35,7 @@ knockout_stage = [
     ("Finals_D", "OAK", "AUG")
 ]
 
-# Simulate the knockout stage
+# Simulated the knockout stage
 for match_id, team_a, team_b in knockout_stage:
     team_a_points = teams[team_a]
     team_b_points = teams[team_b]
@@ -47,7 +47,7 @@ for match_id, team_a, team_b in knockout_stage:
     else:
         print(f"{team_a} and {team_b} draw in {match_id}")
 
-    # Calculate probability of team_a winning
+    # Calculated probability of team_a winning
     probability_a = calculate_probability(team_a, team_b)
     print(f"Probability of {team_a} winning: {probability_a:.2f}")
 

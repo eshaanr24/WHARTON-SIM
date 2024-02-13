@@ -508,9 +508,8 @@ matches_data = [
     ("LAR", "TUC", "W", "L"),
     ("FOR", "TUC", "L", "W"),
     ("WIC", "TUC", "W", "L")
-    # more match data...
 ]
-
+#function for calculating home advantage
 def calculate_home_advantage(matches_data):
     home_team_wins = defaultdict(int)
     home_team_losses = defaultdict(int)
@@ -533,7 +532,7 @@ def calculate_home_advantage(matches_data):
     return home_advantage
 
 home_advantage = calculate_home_advantage(matches_data)
-
+#print home advantage
 print("Home Advantage:")
 for team, advantage in home_advantage.items():
     print(f"{team}: {advantage}")

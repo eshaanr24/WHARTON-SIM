@@ -1,6 +1,6 @@
 import random
 
-# Define team names and their points
+# Defined team names and their points
 teams = {
     "ANC": 67, "AUG": 65, "FAR": 63, "JAC": 61, "LAR": 60, "PRO": 56, "SFS": 55,
     "LRO": 53, "OAK": 53, "SPR": 51, "DOV": 50, "SAS": 50, "LEX": 48, "TOL": 48,
@@ -8,7 +8,7 @@ teams = {
     "MOB": 40, "ALB": 37, "MAN": 35, "WIC": 35, "TUC": 33, "SJU": 26, "TAC": 25
 }
 
-# Define home advantages for each team
+# Defined home advantages for each team
 home_advantages = {
     "ALB": 1.375, "MOB": 1.4285714285714286, "SAS": 1.4864864864864864,
     "FAR": 1.5666666666666667, "PRO": 1.4, "SFS": 1.5294117647058822,
@@ -21,7 +21,7 @@ home_advantages = {
     "OAK": 1.5925925925925926, "WIC": 1.5, "REN": 1.53125, "LRO": 1.56
 }
 
-# Define group stage matchups
+# Defined group stage matchups
 matches = [
     "Group1_Game1,ANC,LEX", "Group1_Game2,DOV,TAC", "Group1_Game3,TAC,ANC",
     "Group1_Game4,DOV,LEX", "Group1_Game5,ANC,DOV", "Group1_Game6,LEX,TAC",
@@ -50,7 +50,7 @@ def simulate_match(home, away, home_advantage):
     else:
         return 0  # Draw
 
-# Simulate group stage matches
+# Simulated group stage matches
 for match in matches:
     group, home, away = match.split(',')
     group_num = int(group.split('_')[0].replace('Group', ''))

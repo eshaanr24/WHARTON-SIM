@@ -1,6 +1,6 @@
 import random
 
-# Define team names and their points
+# Defined team names and their points
 teams = {
     "ANC": 67, "AUG": 65, "FAR": 63, "JAC": 61, "LAR": 60, "PRO": 56, "SFS": 55,
     "LRO": 53, "OAK": 53, "SPR": 51, "DOV": 50, "SAS": 50, "LEX": 48, "TOL": 48,
@@ -8,7 +8,7 @@ teams = {
     "MOB": 40, "ALB": 37, "MAN": 35, "WIC": 35, "TUC": 33, "SJU": 26, "TAC": 25
 }
 
-# Define group stage matchups
+# Defined group stage matchups
 matches = [
     "Group1_Game1,ANC,LEX", "Group1_Game2,DOV,TAC", "Group1_Game3,TAC,ANC",
     "Group1_Game4,DOV,LEX", "Group1_Game5,ANC,DOV", "Group1_Game6,LEX,TAC",
@@ -69,11 +69,4 @@ for group, standings in group_standings_sorted.items():
         print(f"{i}. {team}: {points} points")
     print()
 
-# Proceed to knockout stages
-# You can implement the knockout stages based on the group standings
-# and proceed with calculating the probability of the selected team winning in knockout stages (semi-finals and finals)
-
-# Example:
-# selected_team = "ANC"
-# selected_team_odds = calculate_probability(selected_team, group_standings_sorted)
 
